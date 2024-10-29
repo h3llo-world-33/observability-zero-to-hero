@@ -22,12 +22,12 @@ spec:
   receivers:
   - name: 'send-email'
     emailConfigs:
-    - to: YOUR_EMAIL_ID
-      from: YOUR_EMAIL_ID
+    - to: ibk.teksphere@gmail.com
+      from: ibk.teksphere@gmail.com
       sendResolved: false
       smarthost: smtp.gmail.com:587
-      authUsername: YOUR_EMAIL_ID
-      authIdentity: YOUR_EMAIL_ID
+      authUsername: ibk.teksphere@gmail.com
+      authIdentity: ibk.teksphere@gmail.com
       authPassword:
         name: mail-pass
         key: gmail-pass
