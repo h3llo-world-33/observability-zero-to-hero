@@ -15,20 +15,20 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: prometheus-service  # Change this to your Prometheus service name
+                name: prometheus-kube-prometheus-prometheus  # Change this to your Prometheus service name
                 port:
                   number: 9090
           - path: /grafana
             pathType: Prefix
             backend:
               service:
-                name: grafana-service  # Change this to your Grafana service name
+                name: prometheus-grafana  # Change this to your Grafana service name
                 port:
                   number: 3000
           - path: /alertmanager
             pathType: Prefix
             backend:
               service:
-                name: alertmanager-service  # Change this to your Alertmanager service name
+                name: prometheus-kube-prometheus-alertmanager  # Change this to your Alertmanager service name
                 port:
                   number: 9093
